@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PHP-BOT.COM - Otomatik İçerik Yakalayıcı - Wordpress Botları, Haber Botları, Video Botları, Film Botları, İlan Botları, Oyun Botları</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: 54px;
+
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+      .contact-form{ margin-top:15px;padding: 15px 0px 25px 0px;}
+      .contact-form .textarea{ min-height:220px; resize:none;}
+      .form-control{ box-shadow:none; border-color:#eee; height:49px;}
+      .form-control:focus{ box-shadow:none; border-color:#00b09c;}
+      .form-control-feedback{ line-height:50px;}
+      .main-btn{ background:#00b09c; border-color:#00b09c; color:#fff;}
+      .main-btn:hover{ background:#00a491;color:#fff;}
+      .form-control-feedback {
+      line-height: 50px;
+      top: 0px;
+      }
+
+      .contact{
+
+        background-color: #F8F8FF;
+        border:1px dashed #e6e6ff;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">PHP-BOT.COM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="./index.html">Anasayfa
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="./iletisim.html">İletişim</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">PHP-BOT.COM <br /><small class="text-muted">İletişim</small></h1>
+          <p class="lead"><mark>phpbotdestek@yandex.com</mark> adresinden bizlere ulaşabilirsiniz.</p></p>
+        </div>
+      </div>
+    </div>
+
+<div class="container-fluid contact">
+  <div class="row">
+    <div class="col-lg-6 offset-lg-3 ">
+        <form role="form" id="contact-form" class="contact-form" action="https://formspree.io/phpbotdestek@yandex.com"
+      method="POST">
+                        <div class="row">
+                    		<div class="col-md-6">
+                      		<div class="form-group">
+                                <input type="text" class="form-control" name="name" autocomplete="off" id="Name" placeholder="İsim">
+                                <input type="hidden" name="_next" value="http://www.php-bot.com/thanks.html" />
+                                <input type="hidden" name="_language" value="tr" />
+                      		</div>
+                      	</div>
+                        	<div class="col-md-6">
+                      		<div class="form-group">
+                                <input type="email" class="form-control" name="_replyto" autocomplete="off" id="email" placeholder="E-Mail">
+                      		</div>
+                      	</div>
+                      	</div>
+                      	<div class="row">
+                      		<div class="col-md-12">
+                      		<div class="form-group">
+                                <textarea class="form-control textarea" rows="3" name="message" id="Message" placeholder="Mesajınız"></textarea>
+                      		</div>
+                      	</div>
+                        </div>
+                        <div class="row">
+                        <div class="col-md-12">
+                      <button type="submit" class="btn main-btn pull-right">Mesajı Gönder</button>
+                      </div>
+                      </div>
+                    </form>
+    </div>
+  </div>
+</div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
+
+    <script type="text/javascript">
+    $('#contact-form').bootstrapValidator({
+    //        live: 'disabled',
+          message: 'Boş Alan Bırakmayın',
+          feedbackIcons: {
+              valid: 'glyphicon glyphicon-ok',
+              invalid: 'glyphicon glyphicon-remove',
+              validating: 'glyphicon glyphicon-refresh'
+          },
+          fields: {
+              Name: {
+                  validators: {
+                      notEmpty: {
+                          message: 'İsim Alanı Boş Bırakılamaz'
+                      }
+                  }
+              },
+              email: {
+                  validators: {
+                      notEmpty: {
+                          message: 'E-Mail Alanı Boş Bırakılamaz'
+                      },
+                      emailAddress: {
+                          message: 'E-Mail Adresi Geçersiz'
+                      }
+                  }
+              },
+              Message: {
+                  validators: {
+                      notEmpty: {
+                          message: 'Mesaj Alanı Boş Bırakılamaz!'
+                      }
+                  }
+              }
+          }
+      });
+    </script>
+  </body>
+
+</html>
