@@ -101,35 +101,30 @@ background-color: #e0e0eb;
 
 					<h1>İletişim Sayfası</h1>
 					<p>Bizlere iletişim formundan ulaşabilirsiniz.</p>
-          <form role="form" id="contact-form" class="contact-form" action="https://formspree.io/phpbotdestek@yandex.com"
-        method="POST">
-                          <div class="row">
-                          <div class="col-md-6">
-                            <div class="form-group">
-                                  <input type="text" class="form-control" name="name" autocomplete="off" id="Name" placeholder="İsim">
-                                  <input type="hidden" name="_next" value="http://www.php-bot.com/thanks.html" />
-                                  <input type="hidden" name="_language" value="tr" />
-                            </div>
-                          </div>
-                            <div class="col-md-6">
-                            <div class="form-group">
-                                  <input type="email" class="form-control" name="_replyto" autocomplete="off" id="email" placeholder="E-Mail">
-                            </div>
-                          </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-12">
-                            <div class="form-group">
-                                  <textarea class="form-control textarea" rows="3" name="message" id="Message" placeholder="Mesajınız"></textarea>
-                            </div>
-                          </div>
-                          </div>
-                          <div class="row">
-                          <div class="col-md-12">
-                        <button type="submit" class="btn btn-warning  ">Mesajı Gönder</button>
-                        </div>
-                        </div>
-                      </form>
+   <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+function email(m, o, n) {
+   if (!document.write) return false;
+   if (document.write) {
+      var m; var o; var n;
+      document.write('<p>İleitşim : <a href="' + 'mailto:' + m + '@' + o + '.' + n + '?subject=PHP BOT" title="Contact">' + m + '@' + o + '.' + n + '<\/a><\/p>');
+   }
+}
+
+//--><!]]>
+</script>
+
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+email("phpbet", "tutanota", "com");
+
+//--><!]]>
+</script>
+<noscript><p>(enable javascript or view source to see the email link)</p></noscript>
+					
+					
 				</div>
 
 			</div><!-- /row -->
